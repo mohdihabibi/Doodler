@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical"
+
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="338dp"
+        android:layout_marginEnd="197dp"
+        android:padding="10dp"
+        android:text="Log In"
+        android:textColor="#FAFBFBFB"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="339dp"
+        android:layout_height="49dp"
+        android:layout_alignEnd="@+id/userName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="-10dp"
+        android:password="true"
+        android:textColorHint="#141313"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="157dp"
+        android:textColorHint="#141313"
+        android:hint="Username"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogIn"
+        android:layout_alignStart="@+id/btnLogIn"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="-47dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sjsu.android.doodle.ProfileFrag">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circle_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dog"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="200dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/cardview_light_background" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        app:contentPaddingTop="15dp"
+                        app:contentPaddingRight="15dp"
+                        app:contentPaddingLeft="15dp"
+                        app:contentPaddingBottom="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="60dp"
+                            android:text="Gurdev Sihra"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/doodles_btn"
+                                android:layout_width="125dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="114dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="281dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="Photos" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="83dp"
+                                android:layout_marginTop="218dp"
+                                android:text="Friends"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/numberOfFriends"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="230dp"
+                                android:layout_marginTop="209dp"
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

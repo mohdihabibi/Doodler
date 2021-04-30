@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.raed.drawingview.BrushView
+        android:id="@+id/brush_view"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="224dp"
+        android:padding="4dp"
+        app:brush_color="@color/colorPrimary" />
+
+    <com.raed.drawingview.DrawingView
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:brush="pencil"
+        app:brush_color="#2187bb"
+        app:brush_size="1"
+        app:drawing_background_color="#dddddd"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#0000BFA5"
+        android:hint="Description of the photo"
+        android:textColorHint="#694A9E" />
+
+    <ImageButton
+        android:id="@+id/brushbtn"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="-1dp"
+        app:srcCompat="@drawable/ic_brush_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/save_btn"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/brushbtn"
+        app:srcCompat="@drawable/ic_save_24dp" />
+
+    <ImageButton
+        android:id="@+id/photo_insert_btn"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/ic_insert_photo_black_24dp" />
+
+
+    <Button
+        android:id="@+id/colorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="466dp"
+        android:text="open color picker"
+        android:textColor="#694A9E" />
+
+
+</RelativeLayout>
