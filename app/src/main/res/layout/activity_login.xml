@@ -7,7 +7,7 @@
 
     android:hapticFeedbackEnabled="false"
     android:orientation="vertical"
-
+    android:background="@drawable/doodle2"
     tools:context=".LoginActivity">
 
     <Button
@@ -17,49 +17,77 @@
         android:layout_alignEnd="@+id/password"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="338dp"
-        android:layout_marginEnd="197dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="178dp"
+        android:background="@drawable/rounded_drawable"
+        android:fontFamily="casual"
         android:padding="10dp"
         android:text="Log In"
-        android:textColor="#FAFBFBFB"
-        android:textSize="14sp" />
+        android:textColor="#141313"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="339dp"
-        android:layout_height="49dp"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
         android:layout_alignEnd="@+id/userName"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="237dp"
-        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="0dp"
+
+        android:fontFamily="casual"
+        android:hint="Password"
+        android:background="@drawable/rounded_drawable"
         android:password="true"
         android:textColorHint="#141313"
-        android:hint="Password"/>
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/userName"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="198dp"
+
+        android:fontFamily="casual"
+        android:hint="Username"
         android:textColorHint="#141313"
-        android:hint="Username"/>
+        android:background="@drawable/rounded_drawable"
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="115dp"
+        android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnLogIn"
         android:layout_alignStart="@+id/btnLogIn"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="-47dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-49dp"
+        android:background="@drawable/rounded_drawable"
+        android:fontFamily="casual"
         android:text="Sign Up"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
+        android:textColor="#141313"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="cursive"
+        android:text="Doodler"
+        android:textColor="#030303"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
